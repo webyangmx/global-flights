@@ -1,62 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>数据可视化</title>
-	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="lib/bootstrap.min.css">
-</head>
-<body>
-	<div id="app">
-		<div id="airlines-gui-container"></div>
-
-	  <div class="info">
-	    <div id="info-airport"></div>
-	  	<div id="info-airline"></div>
-	  	<div id="info-airport-route"></div>
-	  </div>
-
-		<div class="pie-container" id="pie-container"></div>
-
-	  <div class="search" id="search">
-	    <div class="left">
-	      <span class="search-type" data-value="Path">Path</span>
-	      <ul class="select search-item">
-	        <li>Airports</li>
-	        <li>Airlines</li>
-	        <li>Path</li>
-	      </ul>
-	    </div>
-	    <div class="right">
-	      <ul class="select search-result">
-	      </ul>
-	      <input type="text" style="display:none" id="airport-airline" onclick="javascript:this.focus()">
-				<div class="path">
-					<input type="text" id="airport-start" onclick="javascript:this.focus()">
-		      <span> >>> </span>
-					<input type="text" id="airport-end" onclick="javascript:this.focus()">
-				</div>
-	    </div>
-	  </div>
-		<div class="record-container">
-			<ul class="record"></ul>
-		</div>
-		<div class="route-list"></div>
-</div>
-<script src="lib/three.js"></script>
-<script src="lib/Projector.js"></script>
-<script src="lib/OrbitControls.js"></script>
-<script src="lib/tween.min.js"></script>
-<script src="lib/dat.gui.js"></script>
-<script src="lib/stats.min.js"></script>
-<script src="lib/dat.gui.js"></script>
-<script src="utils/utils.js"></script>
-<script src="lib/jquery.min.js"></script>
-<script src="lib/subworkers.js"></script>
-<!-- <script src="lib/bootstrap.min.js"></script> -->
-<script src="lib/highcharts.js"></script>
-<script src="lib/highcharts-3d.js"></script>
-<script src="lib/highcharts-zh-CN.js"></script>
-<script src="index.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>flights-project</title>
+    <style>
+      html,body {
+        padding: 0;
+        margin: 0;
+      }
+      #airlines-gui-container{
+        position :absolute;
+        left :10px;
+        top :60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="airlines-gui-container"></div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
